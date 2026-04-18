@@ -8,7 +8,6 @@
 
     <menuitem sequence="201" name="Document Numbering"  groups="cnw_reg_user"  id="cnw_numbering_menu_201" parent="cnw_numbering_menu_200" action="cnw_numbering_action" />    
   
-<menuitem sequence="202" name="Numbering Wizard"  groups="cnw_reg_user"  id="cnw_numbering_menu_202" parent="cnw_numbering_menu_200" action="cnw_numbering_wizard_action"/>    
-  
+ 
     </data>
 </odoo>
