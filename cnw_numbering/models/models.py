@@ -49,9 +49,9 @@ class CNW_numberingWiz(models.TransientModel):
 													])
 
 			record.write({"numbering":numbering})
-		print (type(docdate))
+	 
 		result = suffix + docdate.strftime("%y") + docdate.strftime("%m") + str(numbering).rjust(4,'0')
-		print(result)
+ 
 		return result
 
 
