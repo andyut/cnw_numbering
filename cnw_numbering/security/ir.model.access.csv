@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+acl_cnw_numbering,acl_cnw_numbering,model_cnw_numbering,,1,1,1,1
+acl_cnw_numbering_wizard,acl_cnw_numbering_wizard,model_cnw_numbering_wizard,,1,1,1,1

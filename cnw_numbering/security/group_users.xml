@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="module_numbering_category" model="ir.module.category">
+            <field name="name">CNW-Document Numbering</field>
+        </record>
+ 
+        <record id="cnw_reg_user" model="res.groups">
+            <field name="category_id" ref="cnw_numbering.module_numbering_category" />
+            <field name="users" eval="[(4,ref('base.user_root'))]"/>
+            <field name="name">Users</field> 
+        </record>
+            
+    </data>
+</odoo>
