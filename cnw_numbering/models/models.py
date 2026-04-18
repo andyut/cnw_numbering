@@ -1,19 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-
-# class /data/igu_it_dev/cnw_numbering(models.Model):
-#     _name = '/data/igu_it_dev/cnw_numbering./data/igu_it_dev/cnw_numbering'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         self.value2 = float(self.value) / 100
-
+ 
 
 class CNW_DOCnumbering(models.Model):
 	_name = "cnw.numbering"
@@ -35,9 +23,7 @@ class CNW_numberingWiz(models.TransientModel):
 	docdate = fields.Date("Date",required=True)
  
 	def getnumbering(self,suffix,docdate):
-		print("test parameter" )
-		print(suffix)
-		print(docdate)
+ 
 
  
 

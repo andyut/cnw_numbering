@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Indoguna-Doc Numbering",
+    'name': "AU-Doc Numbering",
 
     'summary': """
-        Indoguna-Doc Numbering """,
+        Manage document numbering by company, month, and year
+    """,
 
     'description': """
-        Indoguna-Doc Numbering
+        This module provides automatic sequential document numbering
+        based on company, suffix, month, and year.
     """,
 
     'author': "Andy Utomo",
