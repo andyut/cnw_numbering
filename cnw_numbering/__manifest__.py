@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "AU-Doc Numbering",
+    'name': "Simple Document Numbering",
 
     'summary': """
         Manage document numbering by company, month, and year
