@@ -1,42 +1,48 @@
-<section class="oe_container oe_dark">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan">AU-Doc Numbering</h2>
-        <h3 class="oe_slogan">Automatic document numbering by company, month, and year</h3>
-        <div class="oe_span12">
-            <p class="oe_mt32 text-center">
-                This module helps generate sequential document numbers using a suffix,
-                document date, and company-based sequence control.
-            </p>
-        </div>
-    </div>
-</section>
-
 <section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h4 class="oe_slogan">Main Features</h4>
-        <div class="oe_span12">
-            <ul class="oe_mt32">
-                <li>Separate numbering for each company</li>
-                <li>Sequence based on suffix, year, and month</li>
-                <li>Automatic increment for each new document</li>
-                <li>Simple wizard to generate document numbers quickly</li>
-                <li>Easy monitoring from the document numbering menu</li>
-            </ul>
-        </div>
-    </div>
-</section>
+  <div class="oe_row oe_spaced">
+    <h2 class="oe_slogan">Document Numbering</h2>
+    <h3 class="oe_slogan">Odoo 18 Addons Series</h3>
+    <p class="oe_mt32">
+      This addon provides a flexible and automated numbering system for documents such as invoices, purchase orders, and sales orders.
+      It supports prefix, suffix, and sequence configuration per company or document type.
+    </p>
+ 
+  </div>
+
+  <div class="oe_row oe_spaced">
+    <h4 class="oe_slogan">Key Features / Fitur Utama</h4>
+    <ul>
+      <li>Custom prefix & suffix per document type</li>
+      <li>Automatic sequence generation</li>
+      <li>Multi-company support</li>
+      <li>Easy configuration via Settings menu</li>
+      <li>Compatible with Sales, Purchase, and Accounting modules</li>
+    </ul>
+  </div>
+
+  <div class="oe_row oe_spaced">
+    <h4 class="oe_slogan">Preview</h4>
+    <img src="cover.png" alt="Document Numbering Cover" style="width:300px; border-radius:8px;">
+  </div>
 
 <section class="oe_container oe_dark">
     <div class="oe_row oe_spaced">
         <h4 class="oe_slogan">How to Use</h4>
         <div class="oe_span12">
             <ol class="oe_mt32">
-                <li>Open the Document Numbering wizard</li>
-                <li>Enter the document suffix</li>
-                <li>Select the document date</li>
-                <li>Click the button to generate the next number</li>
+                <li>Add function from Any Model</li>
+                 
+                 docnumbering= self.env["cnw.numbering.wizard"].getnumbering('INV',self.docdate)
+                 
             </ol>
             <p class="text-center"><strong>Example:</strong> INV26040001</p>
         </div>
     </div>
+  <div class="oe_row oe_spaced">
+    <h4 class="oe_slogan">Documentation / Dokumentasi</h4>
+    <p>
+      <a href="https://yourdomain.com/docs/document-numbering-en" target="_blank">English Documentation</a> |
+      <a href="https://yourdomain.com/docs/document-numbering-id" target="_blank">Dokumentasi Bahasa Indonesia</a>
+    </p>
+  </div>
 </section>
