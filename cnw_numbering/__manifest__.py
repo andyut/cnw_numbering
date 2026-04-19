@@ -18,7 +18,7 @@
     'category': 'others',
     'version': '0.1',
     'application':True,
-    'images': ['static/description/main_screenshoot.png'],
+    'images': ['static/description/cover.png'],
     # any module necessary for this one to work correctly
     'depends': ['base'],
 
