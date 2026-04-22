@@ -8,7 +8,7 @@ class CNW_DOCnumbering(models.Model):
 	_description = "Document Numbering"
 
 	name 			= fields.Char("Doc Numbering")
-	company_id      = fields.Many2one('res.company', 'Company', required=True, index=True,  default=lambda self: self.env.user.company_id.id)
+	company_id      = fields.Many2one('res.company', 'Company', required=True, index=True,  default=lambda self: self.env.company.id)
 	suffix 			= fields.Char("Suffix",required=True)
 	iyear			= fields.Char("Year",required=True)
 	imonth			= fields.Char("Month",required=True)
@@ -21,13 +21,13 @@ class CNW_numberingWiz(models.TransientModel):
 	_description ="NUmbering WIzard"
 	suffix = fields.Char("Suffix")
 	docdate = fields.Date("Date",required=True)
+	company_id      = fields.Many2one('res.company', 'Company', required=True, index=True,  default=lambda self: self.env.company.id)
  
 	def getnumbering(self,suffix,docdate):
  
-
  
 
-		numb = self.env["cnw.numbering"].search([("company_id","=",self.env.user.company_id.id),
+		numb = self.env["cnw.numbering"].search([("company_id","=",self.company_id.id),
 													("suffix","=",suffix),
 													("iyear","=" ,docdate.year),
 													("imonth","=" ,docdate.month),
@@ -35,14 +35,14 @@ class CNW_numberingWiz(models.TransientModel):
  
 		numbering = numb+1
 		if numb==0:
-			self.env["cnw.numbering"].create({"company_id":self.env.user.company_id.id,
+			self.env["cnw.numbering"].create({"company_id":self.company_id.id,
 													"suffix":suffix,
 													"iyear":docdate.year,
 													"imonth": docdate.month,
 													"numbering":numbering})
 
 		else:
-			record = self.env['cnw.numbering'].search([("company_id","=",self.env.user.company_id.id),
+			record = self.env['cnw.numbering'].search([("company_id","=",self.company_id.id),
 													("suffix","=",suffix),
 													("iyear","=" ,docdate.year),
 													("imonth","=" ,docdate.month),
