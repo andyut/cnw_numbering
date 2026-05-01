@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Simple Document Numbering",
+    'name': "Simple Document Numbering ( without ir.sequence )",
 
     'summary': """
-        Manage document numbering by company, month, and year
+        Manage document numbering by company, month, and year automatically. 
     """,
 
     'description': """
